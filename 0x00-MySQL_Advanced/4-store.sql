@@ -7,7 +7,7 @@ For EACH ROW
 BEGIN
 UPDATE `items`
 -- Decrease quantity value
-SET `quantity` = `quantity` - `NEW.number`
-WHERE `name` = `NEW.item_name`;
+SET `quantity` = `quantity` - NEW.number
+WHERE `name` = NEW.item_name;
 END;//
-DELIMITER ;
+DELIMITER ;//
