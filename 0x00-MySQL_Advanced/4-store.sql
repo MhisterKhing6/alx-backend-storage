@@ -1,4 +1,5 @@
---Creating a triger on orders to update a table on insert
+-- Creating a triger on orders to update a table on insert
+-- updates the quantity table when oder is inserted
 DELIMITER //;
 CREATE Trigger `decrease_item` AFTER INSERT ON `orders`
 For EACH ROW
