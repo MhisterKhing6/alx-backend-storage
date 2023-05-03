@@ -1,4 +1,4 @@
--- order the number of fan from a band
+--order the number of fan from a band
 -- select band base on lifespan
 select `band_name` ,(`split` - `formed`) as `lifespan` 
 FROM  `metal_bands`
