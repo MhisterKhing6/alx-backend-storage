@@ -1,5 +1,7 @@
+-- Create a function that safely adds and return the div of two numbers
+-- Function div
 DELIMITER $$
-CREATE FUNCTION `safeDiv`(
+CREATE FUNCTION IF NOT EXISTS`safeDiv`(
 	a INT, b INT
 ) 
 RETURNS FLOAT
