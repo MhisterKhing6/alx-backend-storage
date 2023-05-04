@@ -1,4 +1,5 @@
 -- Set valid email when the email attribute change --
+-- check if email is valid
 DELIMITER //;
 CREATE Trigger `valid_email` BEFORE UPDATE ON `users` 
  FOR EACH ROW
