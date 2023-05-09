@@ -10,6 +10,6 @@ def update_topics(mongo_collection, name, topics):
     name : The name to change the topic
     topics : the topic to change the name
     """
-    return mongo_collection.update(
+    return mongo_collection.update_many(
         {'name': name}, {'$set': {'topics': topics}}
         )
