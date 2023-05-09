@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
+#! /usr/bin/env python3
 """
-Lit all documents in a mongo db collection
+List all documents in a mongo db collection
+
 """
-
-
 def list_all(mongo_collection):
     """
     list-all : List all documents in a mongo collection
