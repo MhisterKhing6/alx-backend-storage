@@ -15,7 +15,7 @@ for method in methods:
 # Get all logs with method equals post and path status
 get_status = collection.count_documents({"method": "GET", "path": "/status"})
 count = 0
-print("{} Logs".format(sum(number_of_methos)))
+print("{} logs".format(sum(number_of_methos)))
 print("Methods:")
 for method in methods:
     print("\tmethod {}: {}".format(method, number_of_methos[count]))
